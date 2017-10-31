@@ -25,6 +25,15 @@
         <ObjectProperty IRI="#hasIngredient"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#DistributorMinuman"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sayur"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SupAyam"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Minuman"/>
     </Declaration>
     <Declaration>
@@ -40,7 +49,16 @@
         <Class IRI="#TelurDadar"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Wortel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#manage"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Beras"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DistributorSayuran"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Aksi"/>
@@ -64,7 +82,19 @@
         <Class IRI="#Telur"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Aktor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DagingAyam"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Kasir"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Brokoli"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Ingredient"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isIngredientOf"/>
@@ -76,7 +106,13 @@
         <Class IRI="#Masak"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Distributor"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Pelayan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DistributorAyam"/>
     </Declaration>
     <Declaration>
         <Class IRI="#AirMineral"/>
@@ -94,6 +130,9 @@
         <Class IRI="#Antar"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Manager"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#HarryPurba"/>
     </Declaration>
     <Declaration>
@@ -101,6 +140,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#MiGoreng"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#supply"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Pesan"/>
@@ -125,8 +167,74 @@
         <Class IRI="#BahanBaku"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Brokoli"/>
+        <Class IRI="#Sayur"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#BuahBuahan"/>
         <Class IRI="#BahanBaku"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DagingAyam"/>
+        <Class IRI="#BahanBaku"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Distributor"/>
+        <Class IRI="#Aktor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DistributorAyam"/>
+        <Class IRI="#Distributor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DistributorAyam"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#supply"/>
+            <Class IRI="#DagingAyam"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DistributorAyam"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#supply"/>
+            <Class IRI="#Telur"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DistributorMinuman"/>
+        <Class IRI="#Distributor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DistributorMinuman"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#supply"/>
+            <Class IRI="#AirMineral"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DistributorMinuman"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#supply"/>
+            <Class IRI="#TehKotak"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DistributorSayuran"/>
+        <Class IRI="#Distributor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DistributorSayuran"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#supply"/>
+            <Class IRI="#Brokoli"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DistributorSayuran"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#supply"/>
+            <Class IRI="#Wortel"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Jambu"/>
@@ -165,6 +273,17 @@
     <SubClassOf>
         <Class IRI="#Makanan"/>
         <Class IRI="#Menu"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Manager"/>
+        <Class IRI="#Aktor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Manager"/>
+        <ObjectExactCardinality cardinality="3">
+            <ObjectProperty IRI="#manage"/>
+            <Class IRI="#Pegawai"/>
+        </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Mangga"/>
@@ -219,12 +338,49 @@
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Pegawai"/>
+        <Class IRI="#Aktor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pelanggan"/>
+        <Class IRI="#Aktor"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Pelayan"/>
         <Class IRI="#Pegawai"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Pesan"/>
         <Class IRI="#Aksi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sayur"/>
+        <Class IRI="#BahanBaku"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SupAyam"/>
+        <Class IRI="#Makanan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SupAyam"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Brokoli"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SupAyam"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#DagingAyam"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SupAyam"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Wortel"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#TehKotak"/>
@@ -245,6 +401,10 @@
             <Class IRI="#Telur"/>
         </ObjectExactCardinality>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wortel"/>
+        <Class IRI="#Sayur"/>
+    </SubClassOf>
     <ClassAssertion>
         <Class IRI="#Pelayan"/>
         <NamedIndividual IRI="#HarryPurba"/>
@@ -257,6 +417,26 @@
         <Class IRI="#Kasir"/>
         <NamedIndividual IRI="#VeriskyMJ"/>
     </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Ingredient"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <ObjectProperty IRI="#Ingredient"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isIngredientOf"/>
+        <ObjectProperty IRI="#Ingredient"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#manage"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#supply"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
     <InverseObjectProperties>
         <ObjectProperty IRI="#hasIngredient"/>
         <ObjectProperty IRI="#isIngredientOf"/>
