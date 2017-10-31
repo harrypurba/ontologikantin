@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/purba/ontologies/2017/9/ontologikantin">
-    <Prefix name="" IRI="http://www.semanticweb.org/purba/ontologies/2017/9/ontologikantin#"/>
+    <Prefix name="" IRI="http://www.semanticweb.org/purba/ontologies/2017/9/ontologikantin"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -16,25 +16,19 @@
         <Class IRI="#NasiGoreng"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Kasir"/>
+        <Class IRI="#Pegawai"/>
     </Declaration>
     <Declaration>
         <Class IRI="#JuruMasak"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Human"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isIngredientOf"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#hasIngredient"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Masak"/>
+        <Class IRI="#Minuman"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Pelayan"/>
+        <NamedIndividual IRI="#VeriskyMJ"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Menu"/>
@@ -43,22 +37,67 @@
         <Class IRI="#Pelanggan"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#MiLidi"/>
+        <Class IRI="#TelurDadar"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Beras"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Antar"/>
+        <Class IRI="#Aksi"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Aksi"/>
+        <Class IRI="#Makanan"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Bayar"/>
     </Declaration>
     <Declaration>
         <Class IRI="#BahanBaku"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JusMangga"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mangga"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Telur"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kasir"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isIngredientOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Jambu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Masak"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pelayan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AirMineral"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JusJambu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RioChandra"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MiLidi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Antar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HarryPurba"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BuahBuahan"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MiGoreng"/>
@@ -66,6 +105,13 @@
     <Declaration>
         <Class IRI="#Pesan"/>
     </Declaration>
+    <Declaration>
+        <Class IRI="#TehKotak"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AirMineral"/>
+        <Class IRI="#Minuman"/>
+    </SubClassOf>
     <SubClassOf>
         <Class IRI="#Antar"/>
         <Class IRI="#Aksi"/>
@@ -79,12 +125,50 @@
         <Class IRI="#BahanBaku"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#BuahBuahan"/>
+        <Class IRI="#BahanBaku"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Jambu"/>
+        <Class IRI="#BuahBuahan"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#JuruMasak"/>
-        <Class IRI="#Human"/>
+        <Class IRI="#Pegawai"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JusJambu"/>
+        <Class IRI="#Minuman"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JusJambu"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Jambu"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JusMangga"/>
+        <Class IRI="#Minuman"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JusMangga"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Mangga"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Kasir"/>
-        <Class IRI="#Human"/>
+        <Class IRI="#Pegawai"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Makanan"/>
+        <Class IRI="#Menu"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mangga"/>
+        <Class IRI="#BuahBuahan"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Masak"/>
@@ -92,7 +176,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MiGoreng"/>
-        <Class IRI="#Menu"/>
+        <Class IRI="#Makanan"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MiGoreng"/>
@@ -102,12 +186,23 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#MiGoreng"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Telur"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#MiLidi"/>
         <Class IRI="#BahanBaku"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#NasiGoreng"/>
+        <Class IRI="#Minuman"/>
         <Class IRI="#Menu"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NasiGoreng"/>
+        <Class IRI="#Makanan"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#NasiGoreng"/>
@@ -117,17 +212,51 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Pelanggan"/>
-        <Class IRI="#Human"/>
+        <Class IRI="#NasiGoreng"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Telur"/>
+        </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Pelayan"/>
-        <Class IRI="#Human"/>
+        <Class IRI="#Pegawai"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Pesan"/>
         <Class IRI="#Aksi"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TehKotak"/>
+        <Class IRI="#Minuman"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Telur"/>
+        <Class IRI="#BahanBaku"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TelurDadar"/>
+        <Class IRI="#Makanan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TelurDadar"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Telur"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Pelayan"/>
+        <NamedIndividual IRI="#HarryPurba"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JuruMasak"/>
+        <NamedIndividual IRI="#RioChandra"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kasir"/>
+        <NamedIndividual IRI="#VeriskyMJ"/>
+    </ClassAssertion>
     <InverseObjectProperties>
         <ObjectProperty IRI="#hasIngredient"/>
         <ObjectProperty IRI="#isIngredientOf"/>
