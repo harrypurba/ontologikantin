@@ -13,16 +13,10 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
-        <Class IRI="#NasiGoreng"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Pegawai"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#JuruMasak"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasIngredient"/>
+        <Class IRI="#DriverPesanAntar"/>
     </Declaration>
     <Declaration>
         <Class IRI="#DistributorMinuman"/>
@@ -31,19 +25,7 @@
         <Class IRI="#Sayur"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#SupAyam"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Minuman"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#VeriskyMJ"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Menu"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Pelanggan"/>
     </Declaration>
     <Declaration>
         <Class IRI="#TelurDadar"/>
@@ -55,9 +37,6 @@
         <ObjectProperty IRI="#manage"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Beras"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#DistributorSayuran"/>
     </Declaration>
     <Declaration>
@@ -67,16 +46,7 @@
         <Class IRI="#Makanan"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Bayar"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BahanBaku"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#JusMangga"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Mangga"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Telur"/>
@@ -94,16 +64,10 @@
         <Class IRI="#Brokoli"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#Ingredient"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#isIngredientOf"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Jambu"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Masak"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Distributor"/>
@@ -115,10 +79,73 @@
         <Class IRI="#DistributorAyam"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#AirMineral"/>
+        <Class IRI="#JusJambu"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#JusJambu"/>
+        <Class IRI="#Internal"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#composedOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Manager"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BuahBuahan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MiGoreng"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#supply"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NasiGoreng"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pesanan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JuruMasak"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasIngredient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SupAyam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Minuman"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Menu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Eksternal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pelanggan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Beras"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bayar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BahanBaku"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mangga"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Ingredient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Masak"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AirMineral"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#RioChandra"/>
@@ -130,19 +157,13 @@
         <Class IRI="#Antar"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Manager"/>
+        <ObjectProperty IRI="#delivery"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#HarryPurba"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#BuahBuahan"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#MiGoreng"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#supply"/>
+        <NamedIndividual IRI="#Yudis"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Pesan"/>
@@ -180,7 +201,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Distributor"/>
-        <Class IRI="#Aktor"/>
+        <Class IRI="#Eksternal"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DistributorAyam"/>
@@ -237,6 +258,25 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#DriverPesanAntar"/>
+        <Class IRI="#Eksternal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DriverPesanAntar"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#delivery"/>
+            <Class IRI="#Pesanan"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Eksternal"/>
+        <Class IRI="#Aktor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Internal"/>
+        <Class IRI="#Aktor"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Jambu"/>
         <Class IRI="#BuahBuahan"/>
     </SubClassOf>
@@ -276,7 +316,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Manager"/>
-        <Class IRI="#Aktor"/>
+        <Class IRI="#Internal"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Manager"/>
@@ -339,11 +379,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Pegawai"/>
-        <Class IRI="#Aktor"/>
+        <Class IRI="#Internal"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Pelanggan"/>
-        <Class IRI="#Aktor"/>
+        <Class IRI="#Eksternal"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Pelayan"/>
@@ -352,6 +392,13 @@
     <SubClassOf>
         <Class IRI="#Pesan"/>
         <Class IRI="#Aksi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pesanan"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#composedOf"/>
+            <Class IRI="#Menu"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Sayur"/>
@@ -417,8 +464,20 @@
         <Class IRI="#Kasir"/>
         <NamedIndividual IRI="#VeriskyMJ"/>
     </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Manager"/>
+        <NamedIndividual IRI="#Yudis"/>
+    </ClassAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#Ingredient"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#composedOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#delivery"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
