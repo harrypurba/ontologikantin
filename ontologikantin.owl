@@ -1,82 +1,306 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/purba/ontologies/2017/9/ontologikantin"
+     xml:base="http://www.rplsd.org/ontologikantin"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/purba/ontologies/2017/9/ontologikantin">
-    <Prefix name="" IRI="http://www.semanticweb.org/purba/ontologies/2017/9/ontologikantin#"/>
+     ontologyIRI="http://www.rplsd.org/ontologikantin">
+    <Prefix name="" IRI="http://www.rplsd.org/ontologikantin#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="obda" IRI="https://w3id.org/obda/vocabulary#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
-        <Class IRI="#NasiGoreng"/>
+        <Class IRI="#Barat"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Kasir"/>
+        <Class IRI="#Rebus"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#JuruMasak"/>
+        <ObjectProperty IRI="#hasAsalDaerah"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cepat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NasiGorengTelur"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Indonesia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TidakPedas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Panggang"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Goreng"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gulai"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NasiGorengMawut"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Buah"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DagingAyam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Telur"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SotoAyam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Santan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pelayan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TingkatKepedasan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SotoSapi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ValuePartition"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Human"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isIngredientOf"/>
+        <Class IRI="#Lama"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MinumanPanas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SiapSaji"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Jepang"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bakar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Soto"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Jamur"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JuruCuci"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CaraMemasak"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kasir"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DagingSapi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ikan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Beras"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NasiGoreng"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MakananVegetarian"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MinumanDingin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pelanggan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Menu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MiGoreng"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AyamGoreng"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BahanBaku"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JuruMasak"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SayurToge"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTingkatKepedasan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LamaPenyajian"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pedas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AyamKecap"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Korea"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasIngredient"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Masak"/>
+        <Class IRI="#Sedang"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Pelayan"/>
+        <ObjectProperty IRI="#isIngredientOf"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Menu"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Pelanggan"/>
+        <Class IRI="#NasiGorengAyam"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MiLidi"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Beras"/>
+        <Class IRI="#MiRebus"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Antar"/>
+        <Class IRI="#Daerah"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Aksi"/>
+        <Class IRI="#NasiGorengSapi"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Bayar"/>
+        <Class IRI="#MakananBernama"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#BahanBaku"/>
+        <Class IRI="#DomainThing"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#MiGoreng"/>
+        <Class IRI="#Makanan"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Pesan"/>
+        <Class IRI="#Minuman"/>
     </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#MakananVegetarian"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Makanan"/>
+            <ObjectIntersectionOf>
+                <ObjectComplementOf>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="#hasIngredient"/>
+                        <Class IRI="#DagingAyam"/>
+                    </ObjectSomeValuesFrom>
+                </ObjectComplementOf>
+                <ObjectComplementOf>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="#hasIngredient"/>
+                        <Class IRI="#DagingSapi"/>
+                    </ObjectSomeValuesFrom>
+                </ObjectComplementOf>
+                <ObjectComplementOf>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="#hasIngredient"/>
+                        <Class IRI="#Ikan"/>
+                    </ObjectSomeValuesFrom>
+                </ObjectComplementOf>
+            </ObjectIntersectionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
     <SubClassOf>
-        <Class IRI="#Antar"/>
-        <Class IRI="#Aksi"/>
+        <Class IRI="#AyamGoreng"/>
+        <Class IRI="#MakananBernama"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Bayar"/>
-        <Class IRI="#Aksi"/>
+        <Class IRI="#AyamKecap"/>
+        <Class IRI="#MakananBernama"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BahanBaku"/>
+        <Class IRI="#DomainThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bakar"/>
+        <Class IRI="#CaraMemasak"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Barat"/>
+        <Class IRI="#Daerah"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Beras"/>
         <Class IRI="#BahanBaku"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Buah"/>
+        <Class IRI="#BahanBaku"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CaraMemasak"/>
+        <Class IRI="#ValuePartition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cepat"/>
+        <Class IRI="#LamaPenyajian"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Daerah"/>
+        <Class IRI="#ValuePartition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DagingAyam"/>
+        <Class IRI="#BahanBaku"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DagingSapi"/>
+        <Class IRI="#BahanBaku"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Goreng"/>
+        <Class IRI="#CaraMemasak"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gulai"/>
+        <Class IRI="#CaraMemasak"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Human"/>
+        <Class IRI="#DomainThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ikan"/>
+        <Class IRI="#BahanBaku"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Indonesia"/>
+        <Class IRI="#Daerah"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Jamur"/>
+        <Class IRI="#BahanBaku"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Jepang"/>
+        <Class IRI="#Daerah"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JuruCuci"/>
+        <Class IRI="#Human"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#JuruMasak"/>
@@ -87,34 +311,84 @@
         <Class IRI="#Human"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Masak"/>
-        <Class IRI="#Aksi"/>
+        <Class IRI="#Korea"/>
+        <Class IRI="#Daerah"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#MiGoreng"/>
+        <Class IRI="#Lama"/>
+        <Class IRI="#LamaPenyajian"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LamaPenyajian"/>
+        <Class IRI="#ValuePartition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Makanan"/>
         <Class IRI="#Menu"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#MakananBernama"/>
+        <Class IRI="#Makanan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MakananVegetarian"/>
+        <Class IRI="#Makanan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Menu"/>
+        <Class IRI="#DomainThing"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#MiGoreng"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#MiLidi"/>
-        </ObjectSomeValuesFrom>
+        <Class IRI="#MakananBernama"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MiLidi"/>
         <Class IRI="#BahanBaku"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#NasiGoreng"/>
+        <Class IRI="#MiRebus"/>
+        <Class IRI="#MakananBernama"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Minuman"/>
         <Class IRI="#Menu"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#MinumanDingin"/>
+        <Class IRI="#Minuman"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MinumanPanas"/>
+        <Class IRI="#Minuman"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#NasiGoreng"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Beras"/>
-        </ObjectSomeValuesFrom>
+        <Class IRI="#MakananBernama"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NasiGorengAyam"/>
+        <Class IRI="#NasiGoreng"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NasiGorengMawut"/>
+        <Class IRI="#NasiGoreng"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NasiGorengSapi"/>
+        <Class IRI="#NasiGoreng"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NasiGorengTelur"/>
+        <Class IRI="#NasiGoreng"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Panggang"/>
+        <Class IRI="#CaraMemasak"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pedas"/>
+        <Class IRI="#TingkatKepedasan"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Pelanggan"/>
@@ -125,15 +399,61 @@
         <Class IRI="#Human"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Pesan"/>
-        <Class IRI="#Aksi"/>
+        <Class IRI="#Rebus"/>
+        <Class IRI="#CaraMemasak"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Santan"/>
+        <Class IRI="#BahanBaku"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SayurToge"/>
+        <Class IRI="#BahanBaku"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sedang"/>
+        <Class IRI="#TingkatKepedasan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SiapSaji"/>
+        <Class IRI="#LamaPenyajian"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Soto"/>
+        <Class IRI="#MakananBernama"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SotoAyam"/>
+        <Class IRI="#Soto"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SotoSapi"/>
+        <Class IRI="#Soto"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Telur"/>
+        <Class IRI="#BahanBaku"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TidakPedas"/>
+        <Class IRI="#TingkatKepedasan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TingkatKepedasan"/>
+        <Class IRI="#ValuePartition"/>
     </SubClassOf>
     <InverseObjectProperties>
         <ObjectProperty IRI="#hasIngredient"/>
         <ObjectProperty IRI="#isIngredientOf"/>
     </InverseObjectProperties>
     <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasAsalDaerah"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
         <ObjectProperty IRI="#hasIngredient"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasTingkatKepedasan"/>
     </FunctionalObjectProperty>
     <FunctionalObjectProperty>
         <ObjectProperty IRI="#isIngredientOf"/>
@@ -148,12 +468,28 @@
         <ObjectProperty IRI="#isIngredientOf"/>
     </InverseFunctionalObjectProperty>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAsalDaerah"/>
+        <Class IRI="#Menu"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasIngredient"/>
         <Class IRI="#Menu"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTingkatKepedasan"/>
+        <Class IRI="#Makanan"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAsalDaerah"/>
+        <Class IRI="#Daerah"/>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasIngredient"/>
         <Class IRI="#BahanBaku"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTingkatKepedasan"/>
+        <Class IRI="#TingkatKepedasan"/>
     </ObjectPropertyRange>
 </Ontology>
 
