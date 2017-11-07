@@ -47,5 +47,9 @@ source		select * from makanan where harga <= 10000
 mappingId	Minuman Murah
 target		:idminuman{id} a :Minuman ; :namaminuman {nama} ; :harga {harga} . 
 source		select * from minuman where harga <= 7000
+
+mappingId	MAPID-fa3dc86455854b2eb37b9ad81433af87
+target		:idmakanan{id} a :Makanan ; :namamakanan {nama} ; :harga {harga} . 
+source		select * from makanan where nama= 'AyamBakar'
 ]]
 
