@@ -26,10 +26,16 @@
         <Class IRI="#Cepat"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#namamakanan"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#NasiGorengTelur"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Indonesia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MakananTingkatPedas"/>
     </Declaration>
     <Declaration>
         <Class IRI="#TidakPedas"/>
@@ -59,6 +65,9 @@
         <Class IRI="#SotoAyam"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#MakananTidakPedas"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Santan"/>
     </Declaration>
     <Declaration>
@@ -71,19 +80,25 @@
         <Class IRI="#SotoSapi"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Lama"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#ValuePartition"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Human"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Lama"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#MinumanPanas"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SiapSaji"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#namaminuman"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MinumanBiasa"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Jepang"/>
@@ -101,6 +116,9 @@
         <Class IRI="#JuruCuci"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#AirBersih"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#CaraMemasak"/>
     </Declaration>
     <Declaration>
@@ -110,13 +128,16 @@
         <Class IRI="#DagingSapi"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Ikan"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Beras"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Ikan"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#NasiGoreng"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLamaPenyajian"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MakananVegetarian"/>
@@ -143,16 +164,25 @@
         <Class IRI="#JuruMasak"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#MakananSedang"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#SayurToge"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasTingkatKepedasan"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasDaerahAsal"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#LamaPenyajian"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Pedas"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#harga"/>
     </Declaration>
     <Declaration>
         <Class IRI="#AyamKecap"/>
@@ -173,6 +203,9 @@
         <Class IRI="#NasiGorengAyam"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasCaraDimasak"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#MiLidi"/>
     </Declaration>
     <Declaration>
@@ -188,6 +221,9 @@
         <Class IRI="#MakananBernama"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#MakananPedas"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#DomainThing"/>
     </Declaration>
     <Declaration>
@@ -196,6 +232,27 @@
     <Declaration>
         <Class IRI="#Minuman"/>
     </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#MakananPedas"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTingkatKepedasan"/>
+            <Class IRI="#Pedas"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MakananSedang"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTingkatKepedasan"/>
+            <Class IRI="#Sedang"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MakananTidakPedas"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTingkatKepedasan"/>
+            <Class IRI="#TidakPedas"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#MakananVegetarian"/>
         <ObjectIntersectionOf>
@@ -222,6 +279,10 @@
             </ObjectIntersectionOf>
         </ObjectIntersectionOf>
     </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#AirBersih"/>
+        <Class IRI="#BahanBaku"/>
+    </SubClassOf>
     <SubClassOf>
         <Class IRI="#AyamGoreng"/>
         <Class IRI="#MakananBernama"/>
@@ -331,6 +392,22 @@
         <Class IRI="#Makanan"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#MakananPedas"/>
+        <Class IRI="#MakananTingkatPedas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MakananSedang"/>
+        <Class IRI="#MakananTingkatPedas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MakananTidakPedas"/>
+        <Class IRI="#MakananTingkatPedas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MakananTingkatPedas"/>
+        <Class IRI="#Makanan"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#MakananVegetarian"/>
         <Class IRI="#Makanan"/>
     </SubClassOf>
@@ -353,6 +430,10 @@
     <SubClassOf>
         <Class IRI="#Minuman"/>
         <Class IRI="#Menu"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MinumanBiasa"/>
+        <Class IRI="#Minuman"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MinumanDingin"/>
@@ -442,6 +523,68 @@
         <Class IRI="#TingkatKepedasan"/>
         <Class IRI="#ValuePartition"/>
     </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#BahanBaku"/>
+        <Class IRI="#Human"/>
+        <Class IRI="#Menu"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Bakar"/>
+        <Class IRI="#Goreng"/>
+        <Class IRI="#Gulai"/>
+        <Class IRI="#Panggang"/>
+        <Class IRI="#Rebus"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Barat"/>
+        <Class IRI="#Indonesia"/>
+        <Class IRI="#Jepang"/>
+        <Class IRI="#Korea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Beras"/>
+        <Class IRI="#Buah"/>
+        <Class IRI="#DagingAyam"/>
+        <Class IRI="#DagingSapi"/>
+        <Class IRI="#Ikan"/>
+        <Class IRI="#Jamur"/>
+        <Class IRI="#MiLidi"/>
+        <Class IRI="#Santan"/>
+        <Class IRI="#SayurToge"/>
+        <Class IRI="#Telur"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CaraMemasak"/>
+        <Class IRI="#Daerah"/>
+        <Class IRI="#LamaPenyajian"/>
+        <Class IRI="#TingkatKepedasan"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Cepat"/>
+        <Class IRI="#Lama"/>
+        <Class IRI="#SiapSaji"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#JuruCuci"/>
+        <Class IRI="#JuruMasak"/>
+        <Class IRI="#Kasir"/>
+        <Class IRI="#Pelanggan"/>
+        <Class IRI="#Pelayan"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Makanan"/>
+        <Class IRI="#Minuman"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#MinumanBiasa"/>
+        <Class IRI="#MinumanDingin"/>
+        <Class IRI="#MinumanPanas"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Pedas"/>
+        <Class IRI="#Sedang"/>
+        <Class IRI="#TidakPedas"/>
+    </DisjointClasses>
     <InverseObjectProperties>
         <ObjectProperty IRI="#hasIngredient"/>
         <ObjectProperty IRI="#isIngredientOf"/>

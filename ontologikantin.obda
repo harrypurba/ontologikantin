@@ -8,5 +8,44 @@ obda:		https://w3id.org/obda/vocabulary#
 rdfs:		http://www.w3.org/2000/01/rdf-schema#
 
 [MappingDeclaration] @collection [[
+mappingId	Minuman Dingin
+target		:idminuman{id} a :MinumanDingin ; :namaminuman {nama} ; :harga {harga} . 
+source		select * from minuman where jenisminuman = 'Dingin'
+
+mappingId	Minuman Biasa
+target		:idminuman{id} a :MinumanBiasa ; :namaminuman {naman} ; :harga {harga} . 
+source		select * from minuman where jenisminuman='Biasa'
+
+mappingId	Minuman Panas
+target		:idminuman{id} a :MinumanPanas ; :namaminuman {nama} ; :harga {harga} . 
+source		select * from minuman where jenisminuman = 'Panas'
+
+mappingId	Makanan Sedang
+target		:idmakanan{id} a :MakananSedang ; :namamakanan {nama} ; :harga {harga} . 
+source		select * from makanan where tingkatkepedasan = 'Sedang'
+
+mappingId	Makanan Tidak Pedas
+target		:idmakanan{id} a :MakananTidakPedas ; :namamakanan {nama} ; :harga {harga} . 
+source		select * from makanan where tingkatkepedasan = 'TidakPedas'
+
+mappingId	Makanan Pedas
+target		:idmakanan{id} a :MakananPedas ; :namamakanan {nama} ; :harga {harga} . 
+source		select * from makanan where tingkatkepedasan = 'Pedas'
+
+mappingId	Teh Manis Dingin
+target		:idminuman{id} a :Minuman ; :namaminuman {nama} ; :harga {harga} . 
+source		select * from minuman where nama = 'Teh Manis Dingin'
+
+mappingId	Teh Manis Hangat
+target		:idminuman{id} a :Minuman ; :namaminuman {nama} ; :harga {harga} . 
+source		select * from minuman where nama = 'Teh Manis Hangat'
+
+mappingId	Makanan Murah
+target		:idmakanan{id} a :Makanan ; :namamakanan {nama} ; :harga {harga} . 
+source		select * from makanan where harga <= 10000
+
+mappingId	Minuman Murah
+target		:idminuman{id} a :Minuman ; :namaminuman {nama} ; :harga {harga} . 
+source		select * from minuman where harga <= 7000
 ]]
 
